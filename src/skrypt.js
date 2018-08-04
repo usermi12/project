@@ -9,7 +9,7 @@
 
             podliczacz++;
             if (podliczacz % 3 == 0) {
-                x.style.backgroundImage = 'url(src/rafika.png)';
+                x.style.backgroundImage = 'url(src/grafika.png)';
             }
             else if (podliczacz % 3 == 1) {
                 x.style.backgroundImage = "url(src/grafika2.png)";

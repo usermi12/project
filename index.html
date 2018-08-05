@@ -6,10 +6,63 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Code and learn</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <script src="src/skrypt.js"></script>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
+  <body onload="start()">
     <div id="container">
-      <!-- Tu dodajecie html swoich sekcji -->
+     <button class="pokaz" onclick="myFunction()">MENU</button>
+
+        <div id="nav">
+            <a href="#">
+                <div class="nav-item" id="pierwszy">
+                    <div class="text">home</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-item">
+                    <div class="text">about</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-item">
+                    <div class="text">services</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-item">
+                    <div class="text">contact</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="nav-item">
+                    <div class="text">work</div>
+                </div>
+            </a>
+        </div>
+        
+        <div id="overlay">
+            <div id="slide">
+          
+            </div>
+            <div class="over">
+                <div id="nav1" onclick="przesuwanep()">
+                    <i class="fa fa-arrow-circle-left"></i>
+                </div>
+                <div id="main">
+                    <div class="text2">
+                        <div class="style1">lorem ipsum </div>
+                        <div class="style3">dolor sit amet ared dera mitos</div>
+                        <button class="style2">Resume</button>
+                    </div>
+                </div>
+                <div id="nav2" onclick="przesuwanet()">
+                    <i class="fa fa-arrow-circle-right"></i>
+                </div>
+            </div>
+        </div>
     </div>
   </body>
 </html>

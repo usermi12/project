@@ -1,4 +1,4 @@
-body {
+﻿body {
   background: #273343;
   margin: 0;
   color:white;
@@ -386,7 +386,7 @@ a:visited
 .wb
 {
     box-sizing: border-box;
-    width: 1140px;
+    width: 1280px;
     margin:0 auto;
     padding:4% 1%;
     background-color:white;

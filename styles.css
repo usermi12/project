@@ -5,7 +5,9 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
-
+#section{
+    max-width: 1280px;
+}
 #container {
   max-width: 1280px;
   margin: 10px auto;
@@ -381,6 +383,95 @@ a:visited
   margin-top: 8px;
 }
 
+.wb
+{
+    box-sizing: border-box;
+    width: 1140px;
+    margin:0 auto;
+    padding:4% 1%;
+    background-color:white;
+    color:grey;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.wb_item
+{
+    box-sizing: inherit;
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+}
+
+
+.wb_item > a 
+{
+    font-weight: bold;
+    margin-top:10%;
+    box-sizing: content-box;
+    color:white;
+    width:20%;
+    padding: 2%;
+    height: auto;
+    background-color:#22af8d;
+    display: flex;
+    border-radius: 10%;
+}
+.wb_item > a::after
+{
+    margin-left:5%;
+    font-family: FontAwesome;
+    content: "\f061";
+    
+}
+.wb_item_title
+{
+    display: flex;
+    flex-direction: column;
+    color:#22af8d
+}
+.wb_item_title > p
+{
+    margin:0 0;
+    color:grey;
+    font-weight:900;
+}
+
+.icon_container
+{
+    background-color:#22af8d;
+    display: block;
+    width:10%;
+    font-size:2em;
+    height: auto;
+    color:white;
+    border-radius: 10%;
+    padding:1%;
+    margin-right:3%;
+    
+}
+.wb-title-container
+{
+    display:flex;
+    margin-bottom:5%;
+}
+.wb_item>a:hover
+{
+color:#22af8d;
+background:white;
+-webkit-transition: all 0.5s linear;
+-moz-transition: all 0.5s linear;
+-ms-transition: all  0.5s linear;
+-o-transition: all  0.5s linear;
+transition: all  0.5s linear;
+transform: scale(1.5);
+
+}
+
+
+/* media queries*/
 @media screen and (max-width: 1280px){
   #container {
     width: 100%;
@@ -398,6 +489,32 @@ a:visited
     width: 150px;
     height: 150px;
   }
+  .wb
+  {
+      flex-direction: column;
+     width:75%;
+     -webkit-box-shadow: 0 2px 1px 1px #22af8d;
+    box-shadow: 0 2px 1px 1px #22af8d;
+  }
+  .wb_item
+  {
+      width:100%;
+      margin-top:5%;
+      justify-items: center;
+     
+  }
+  .wb_item>a{
+      width:5em;
+  }
+  .wb-title-container
+  {
+      justify-content: center;
+  }
+  .icon_container
+  {
+      width:1em;
+  }
+
 }
 
 @media screen and (max-width: 600px){
@@ -437,3 +554,4 @@ a:visited
     margin: 0 0 40px;
   }
 }
+

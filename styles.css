@@ -194,7 +194,7 @@ a:visited
     }
     #over
     {
-        width:90%;
+        width:100%;
     }
 }
 
@@ -204,10 +204,7 @@ a:visited
     #overlay
     {
         margin-top:60px;
-    }
-    .container
-    {
-        width:90%;
+		margin-bottom:40px;
     }
     #nav
     {

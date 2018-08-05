@@ -1,5 +1,8 @@
 body {
   background: #273343;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 #container {
@@ -8,4 +11,119 @@ body {
   font-family: sans-serif;
 }
 
-/* Poniżej dodajecie swoje style */
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 1140px;
+  height: 460px;
+  background: #38475a;
+}
+
+.item h3{
+  margin: 0;
+  color: #22af8d;
+  text-transform: uppercase;
+}
+
+.item p{
+  margin: 10px 0 0;
+  color: #6a8493;
+}
+
+.item__border {
+  margin: 20px 0 0;
+  width: 60px;
+  border-top: #6a8493 solid 1px;
+}
+
+.item__container {
+  display: flex;
+  margin: 36px 0 0;
+}
+
+.item__container img {
+  margin: 0 12px 20px 12px;
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  transition: all 700ms ease-in-out;
+}
+
+.item__container img:hover {
+  border-radius: 25%;
+  animation: rotate 1000ms;
+}
+
+@-webkit-keyframes rotate {
+  0% {transform: rotateZ(0deg);}
+  100% {transform: rotateZ(360deg);}
+}
+
+.item__container h3 {
+  color: #88dec1;
+}
+
+.item__container p {
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 1280px){
+  #container {
+    width: 100%;
+  }
+
+  .item {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px){
+
+  .item__container img {
+    margin: 0 12px 20px 12px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .item {
+    height: 100%;
+  }
+
+  .item h3 {
+    margin: 25px 20px 0 ;
+    font-size: 30px;
+  }
+
+  .item p{
+    margin: 20px 30px 0;
+    font-size: 20px;
+  }
+
+  .item__border {
+    width: 50%;
+  }
+
+  .item__container {
+    flex-direction: column;
+  }
+
+  .item__container img {
+    margin: 0;
+    width: 250px;
+    height: 250px;
+  }
+
+  .item__container h3 {
+    margin: 10px 0 5px;
+  }
+
+  .item__container p {
+    margin: 0 0 40px;
+  }
+}

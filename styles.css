@@ -26,7 +26,7 @@ a:visited
 
 #overlay
 {
-  color:#ffffff;
+  color:white;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -48,6 +48,7 @@ a:visited
 
 #over
 {
+  color:white;
     width:1280px;
     height:480px;
     background-color:rgba(0, 0, 255,0.5);
@@ -111,6 +112,7 @@ a:visited
 
 #nav
 {
+  color:white;
     width:100%;
     background-color:#525162;
     height:95px;
@@ -324,7 +326,7 @@ a:visited
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  width: 1280px;
+  width: 1140px;
   height: 460px;
   background: #38475a;
 }
